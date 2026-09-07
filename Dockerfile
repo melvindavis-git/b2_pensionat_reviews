@@ -1,4 +1,4 @@
-# BOOKING SERVICE
+# REVIEWS SERVICE
 
 FROM maven:3.9-eclipse-temurin-25 AS builder
 
