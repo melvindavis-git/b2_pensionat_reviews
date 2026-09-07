@@ -19,7 +19,7 @@ public class ReviewMapper {
 
     public static Review toEntity(ReviewRequestDTO reviewRequestDTO) {
        return new Review(
-               0L,
+              null,
                reviewRequestDTO.roomId(),
                reviewRequestDTO.reviewContent(),
                reviewRequestDTO.stars(),
