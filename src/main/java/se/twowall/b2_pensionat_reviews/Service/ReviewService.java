@@ -18,11 +18,11 @@ import java.util.List;
 public class ReviewService {
 
     private final ReviewRepository reviewRepository;
-    ReviewMapper map;
+    ReviewMapper map = new  ReviewMapper();
 
-    public ReviewService(ReviewRepository reviewRepository, ReviewMapper map) {
+    public ReviewService(ReviewRepository reviewRepository) {
         this.reviewRepository = reviewRepository;
-        this.map = map;
+
 
     }
 

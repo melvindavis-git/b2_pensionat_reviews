@@ -8,13 +8,12 @@ import se.twowall.b2_pensionat_reviews.Entity.Review;
 import se.twowall.b2_pensionat_reviews.Repository.ReviewRepository;
 
 import java.time.LocalDate;
-import java.time.LocalDateTime;
 
 @SpringBootApplication
-public class B2PensionatReviewsApplication {
+public class b2PensionatReviewsApplication {
 
     public static void main(String[] args) {
-        SpringApplication.run(B2PensionatReviewsApplication.class, args);
+        SpringApplication.run(b2PensionatReviewsApplication.class, args);
     }
 
     @Bean
@@ -24,7 +23,7 @@ public class B2PensionatReviewsApplication {
             LocalDate today = LocalDate.now();
 
 
-            Review review1 = reviewRepository.save(new Review(1L, 1L, "This is a test review for room with id 1.", 4, today));
+            Review review1 = reviewRepository.save(new Review(1L, 1L, "This is a test review for room with id 1.", 4, "Prad Bitt" ,today));
         };
 
     }

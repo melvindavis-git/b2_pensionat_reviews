@@ -6,6 +6,7 @@ import se.twowall.b2_pensionat_reviews.Entity.Review;
 
 public class ReviewMapper {
 
+
     public static ReviewResponseDTO toReviewResponseDTO(Review review) {
         return new ReviewResponseDTO(
                 review.getRoomId(),
@@ -14,6 +15,7 @@ public class ReviewMapper {
                 review.getName(),
                 review.getCreatedAt());
     }
+
 
     public static Review toEntity(ReviewRequestDTO reviewRequestDTO) {
        return new Review(

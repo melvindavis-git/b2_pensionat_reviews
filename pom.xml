@@ -9,7 +9,7 @@
         <relativePath/> <!-- lookup parent from repository -->
     </parent>
     <groupId>se.twowall</groupId>
-    <artifactId>B2_pensionat_reviews</artifactId>
+    <artifactId>b2_pensionat_reviews</artifactId>
     <version>0.0.1-SNAPSHOT</version>
     <name>B2_pensionat_reviews</name>
     <description>B2_pensionat_reviews</description>
