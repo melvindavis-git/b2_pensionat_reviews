@@ -18,7 +18,6 @@ import java.util.List;
 public class ReviewService {
 
     private final ReviewRepository reviewRepository;
-    ReviewMapper map = new  ReviewMapper();
 
     public ReviewService(ReviewRepository reviewRepository) {
         this.reviewRepository = reviewRepository;
@@ -35,7 +34,7 @@ public class ReviewService {
     public ReviewResponseDTO createReview(ReviewRequestDTO reviewRequestDTO) {
         try {
             Review review = ReviewMapper.toEntity(reviewRequestDTO);
-            return map.toReviewResponseDTO(reviewRepository.save(review));
+            return ReviewMapper.toReviewResponseDTO(reviewRepository.save(review));
 
         } catch (DataIntegrityViolationException e) {
             throw new ResponseStatusException(HttpStatus.CONFLICT);
